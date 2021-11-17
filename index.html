@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Projeto Oficina</title>
+        <meta charset="utf-8">
+        <meta name="format-detection" content="no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="color-scheme" content="light dark">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="js/funcao.js"></script>
+    </head>
+    <body>
+
+        <select id="filters" name="select">
+            <!--<option value="" selected="selected">Escolha uma marca abaixo:</option>-->
+            <option value="ALFA ROMEO">ALFA ROMEO</option>
+            <option value="ASIA MOTORS" selected>ASIA MOTORS</option>
+            <option value="ASTON MARTIN">ASTON MARTIN</option>
+            <option value="AUDI">AUDI</option>
+            <option value="BENTLEY">BENTLEY*</option>
+            <option value="BMW">BMW</option>
+            <option value="CHANA MOTORS">CHANA MOTORS</option>
+            <option value="CHERY"> </option>
+            <option value="CHEVROLET">CHEVROLET</option>
+            <option value="CHRYSLER"> </option>
+            <option value="CITROËN"> </option>
+            <option value="CROSSLANDER"> </option>
+        </select>
+        <input id="search" type="text" placeholder="Nome do carro"/>
+        <button onclick="filtrar()" id="click"> filtrar</button>
+        <table border="1">
+            <thead>
+                <tr id="TableTitle">
+                    <th scope="Col">Marca</th>
+                    <th scope="Col">Carro</th>
+                    <th scope="Col">Camber Dianteiro Mínimo</th>
+                    <th scope="Col">Camber Doanteiro Máximo</th>
+                    <th scope="Col">Caster Dianteiro Mínimo</th>
+                    <th scope="Col">Caster Dianteiro Máximo</th>
+                    <th scope="Col">Convergência Dianteira Mínimo</th>
+                    <th scope="Col">Convergência Dianteira Máxima</th>
+                    <th scope="Col">Camber Traseiro Mínimo</th>
+                    <th scope="Col">Camber Traseiro Máximo</th>
+                    <th scope="Col">Convergência Dianteira Mínimo</th>
+                    <th scope="Col">Convergência Dianteira Máximo</th>
+                </tr>
+            </thead>
+            <tbody id="TableData">
+                
+            </tbody>
+        </table>
+    </body>
+</html>
